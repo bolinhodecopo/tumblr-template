@@ -1,0 +1,64 @@
+html, body {
+  background: #f2f1dd;
+  margin: 0;
+  padding: 0;
+}
+
+header, nav {
+  display: block;
+}
+
+/* header */
+
+#app-header {
+  background: url(../img/header-bg.jpg) center top repeat;
+  height: 500px;
+  position: relative;
+  box-shadow: 0 0 10px #000;
+} 
+
+#app-header .logo {
+  background: #fff;
+  width: 260px;
+  margin: -145px 0 0 -140px;
+  padding: 20px;
+  border-radius: 40%;
+  border:5px solid #eeb15a;
+  box-shadow: 0 0 100px #000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  overflow: hidden;
+}
+
+#app-header .logo a {
+  display: block;
+}
+
+#app-header .logo img {
+  width: 100%;
+}
+
+/* nav */
+
+#app-nav {
+  background: #ec6649;
+  height: 40px;
+  border-top: 10px solid #eeb15a;
+  border-bottom: 10px solid #eeb15a;
+}
+
+#app-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+#app-nav .links-list {
+  width: 990px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#app-nav .links-list li {
+  display: inline;
+}
