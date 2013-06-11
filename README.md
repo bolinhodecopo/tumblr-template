@@ -1,7 +1,8 @@
 # Bolinho de copo
 Tema do para o Tumblr
 
-* font geral do site: Mate - google webfonts 
-* font dos menus e títulos: Handmade Apple - google webfonts
-* link color: #8a6044
-* active link color: #999
+* fonte geral do site: Mate - google webfonts 
+* fonte dos menus e títulos: Handmade Apple - google webfonts
+* cor padrão dos textos: #444
+* cor padrão dos links: #8a6044
+* cor dos links ativos: #999
