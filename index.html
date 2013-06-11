@@ -8,6 +8,16 @@
 	<link media="all" rel="stylesheet" href="css/main.css" type="text/css" />
 </head>
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=225977590762295";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- end of facebook script -->
+
   <header id="app-header">
     <h1 class="logo">
       <a href="/">
@@ -46,6 +56,25 @@
         </article>
       </li>
   	</ul>
+    <h1>Onde nos encontrar</h1>
+    <ul id="social-list" class="clearfix">
+      <!-- facebook -->
+      <li class="social">
+        <div class="fb-like-box" data-href="https://www.facebook.com/BolinhoDeCopo" data-width="300" data-show-faces="false" data-stream="true" data-show-border="true" data-header="false"></div>
+      </li>
+
+      <!-- twitter -->
+      <li class="social">
+        <a class="twitter-timeline" href="https://twitter.com/BolinhoDeCopo" data-widget-id="344275165804380160">Tweets by @BolinhoDeCopo</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </li>
+
+      <!-- google+ -->
+      <li class="social">
+        <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+        <div width="300" class="g-plus" data-href="https://plus.google.com/115407635197632595818"></div>
+      </li>
+    </ul>
   </section>
 	
 </body>
