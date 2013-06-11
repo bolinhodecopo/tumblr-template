@@ -113,7 +113,7 @@ h6 { font-size: 1.2em; }
 /* posts-list */
 
 #content #posts-list {
-  width: 650px;
+  max-width: 650px;
   margin: 0;
   padding: 0;
   float: left;
