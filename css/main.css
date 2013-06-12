@@ -128,11 +128,7 @@ h6 { font-size: 1.2em; }
 #content #posts-list .post img {
   width: 100%;
   display: block;
-}
-
-#content #posts-list .post img:after {
-  border: 2px solid red;
-  position: absolute;
+  box-shadow: 3px 3px 5px #8a6044;
 }
 
 /* social list */
