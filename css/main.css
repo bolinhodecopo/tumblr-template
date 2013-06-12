@@ -20,7 +20,7 @@ a.active {
   text-decoration: none;
 }
 
-header, nav, article, time {
+header, nav, article {
   display: block;
 }
 
@@ -108,6 +108,7 @@ h6 { font-size: 1.2em; }
 #content {
   max-width: 990px;
   margin: 0 auto;
+  padding: 0 0 10px 0;
 }
 
 /* posts-list */
@@ -133,10 +134,24 @@ h6 { font-size: 1.2em; }
 
 #content #posts-list .post time {
   padding: 10px 0;
+  display: block;
   text-align: right;
   font-weight: bold;
   border-top: 3px dashed #8a6044;
+  font-family: 'Homemade Apple', cursive;
 }
+
+#content #posts-list .pagination {
+  padding: 10px 0;
+  border-bottom: 3px dashed #8a6044;
+}
+
+#content #posts-list .pagination a {
+  font-family: 'Homemade Apple', cursive;
+}
+
+#content #posts-list .pagination .left { float: left; }
+#content #posts-list .pagination .right { float: right; }
 
 /* social list */
 
