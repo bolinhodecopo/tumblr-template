@@ -148,4 +148,21 @@ h6 { font-size: 1.2em; }
 
 #content #social-list .social {
   margin-bottom: 20px;
+  clear: both;
 }
+
+#content #social-list .icon img {
+  width: 100%;
+  float: left;
+}
+
+#content #social-list .icon { float: left; }
+
+#content #social-list .icon { 
+  background: transparent;
+  width: 90px; 
+  margin: 0 0 20px 0;
+  float: left;
+}
+
+#content #social-list .pinterest { margin: 0 15px; }
