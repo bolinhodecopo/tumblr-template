@@ -20,7 +20,7 @@ a.active {
   text-decoration: none;
 }
 
-header, nav, article {
+header, nav, article, time {
   display: block;
 }
 
@@ -129,6 +129,13 @@ h6 { font-size: 1.2em; }
   width: 100%;
   display: block;
   box-shadow: 3px 3px 5px #8a6044;
+}
+
+#content #posts-list .post time {
+  padding: 10px 0;
+  text-align: right;
+  font-weight: bold;
+  border-top: 3px dashed #8a6044;
 }
 
 /* social list */
