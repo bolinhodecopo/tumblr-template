@@ -125,6 +125,15 @@ h6 { font-size: 1.2em; }
   border-bottom: 3px dashed #8a6044;
 }
 
+#content #posts-list .post img {
+  width: 100%;
+  display: block;
+}
+
+#content #posts-list .post img:after {
+  border: 2px solid red;
+  position: absolute;
+}
 
 /* social list */
 

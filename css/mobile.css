@@ -1,0 +1,23 @@
+#app-nav {
+  margin: 0 20px;
+}
+
+#content {
+  margin: 0 20px;
+}
+
+#content #posts-list {
+  max-width: 100%;
+  float: none;
+} 
+
+#content .social-title {
+  text-align: center;
+}
+
+#content #social-list {
+  float: none;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}
