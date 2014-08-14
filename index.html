@@ -53,6 +53,7 @@
       <li><a href="http://bolinhodecopo.art.br/">Loja</a></li>
       <li><a href="http://blog.bolinhodecopo.art.br/tagged/sobre/chrono">Bolinho de Copo?</a></li>
       <li><a class="active" href="http://blog.bolinhodecopo.art.br/">Blog</a></li>
+      <li><a href="http://blog.bolinhodecopo.art.br/tagged/lab">Laboratório de receitas</a></li>
       <li><a href="mailto:contato@bolinhodecopo.art.br">Fale conosco</a></li>
     </ul>
   </nav>
@@ -63,7 +64,12 @@
         {block:Text}
           <li class="post">
             <article>
-              <h1 class="title">{Title}</h1>
+              {block:IndexPage}
+                <h1 class="title"><a href="{Permalink}">{Title}</a></h1>
+              {/block:IndexPage}
+              {block:Permalink}
+                <h1 class="title">{Title}</h1>
+              {/block:Permalink}
               {Body}
               <time datetime="{TimeAgo}"><a href="{Permalink}">{TimeAgo}</a></time>
               {block:IfDisqusShortname}{block:IndexPage}
