@@ -14,6 +14,7 @@
   <link href='http://fonts.googleapis.com/css?family=Mate:400,400italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
   <link media="all" rel="stylesheet" href="http://assets.bolinhodecopo.art.br/stylesheets/app.css" type="text/css" />
+  <link media="all" rel="stylesheet" href="http://assets.bolinhodecopo.art.br/stylesheets/blog.css" type="text/css" />
  
   <link rel="apple-touch-icon" href="http://assets.bolinhodecopo.art.br/images/logo.jpg" />
   <meta name="viewport" content="width=device-width"> 
@@ -40,7 +41,7 @@
   <header class="wrapper app-header">
     <h1 class="logo">
       <a href="/">
-        <img src="/images/logo.png" alt="Bolinho de Copo">
+        <img src="http://assets.bolinhodecopo.art.br/images/logo.png" alt="Bolinho de Copo">
       </a>
     </h1>
   </header>
@@ -66,7 +67,7 @@
   </nav>
 
   <section class="clearfix wrapper app-content">
-  	<ul id="posts-list">
+  	<ul class="posts-list">
       {block:Posts}
         {block:Text}
           <li class="post">
@@ -119,18 +120,18 @@
           </a>
         </li>
         <!-- facebook -->
-        <li class="social" style="background: #fff;">
+        <li class="widget facebook" style="background: #fff;">
           <div class="fb-like-box" data-href="https://www.facebook.com/BolinhoDeCopo" data-width="300" data-show-faces="false" data-stream="true" data-show-border="true" data-header="false"></div>
         </li>
 
         <!-- twitter -->
-        <li class="social">
+        <li class="widget twitter">
           <a class="twitter-timeline" href="https://twitter.com/BolinhoDeCopo" data-widget-id="344275165804380160">Tweets by @BolinhoDeCopo</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </li>
 
         <!-- google+ -->
-        <li class="social">
+        <li class="widget google-plus">
           <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
           <div width="300" class="g-plus" data-href="https://plus.google.com/115407635197632595818"></div>
         </li>
