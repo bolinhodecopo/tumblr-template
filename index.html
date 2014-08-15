@@ -13,12 +13,9 @@
 
   <link href='http://fonts.googleapis.com/css?family=Mate:400,400italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
-  <link media="all" rel="stylesheet" href="https://s3.amazonaws.com/bolinhodecopo-blog/css/main.css" type="text/css" />
-  <link media="(max-width: 970px)" rel="stylesheet" href="https://s3.amazonaws.com/bolinhodecopo-blog/css/mobile.css" type="text/css" />
-  <link media="(max-width: 400px)" rel="stylesheet" href="https://s3.amazonaws.com/bolinhodecopo-blog/css/mobile-400.css" type="text/css" />
-  <link media="(max-width: 320px)" rel="stylesheet" href="https://s3.amazonaws.com/bolinhodecopo-blog/css/mobile-300.css" type="text/css" />
+  <link media="all" rel="stylesheet" href="http://assets.bolinhodecopo.art.br/stylesheets/app.css" type="text/css" />
  
-  <link rel="apple-touch-icon" href="https://s3.amazonaws.com/bolinhodecopo-blog/img/logo.jpg" />
+  <link rel="apple-touch-icon" href="http://assets.bolinhodecopo.art.br/images/logo.jpg" />
   <meta name="viewport" content="width=device-width"> 
 
   <!-- HTML5 Shiv -->
@@ -27,7 +24,7 @@
   <![endif]--> 
 
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-  <script src="https://s3.amazonaws.com/bolinhodecopo-blog/js/main.js"></script>
+  <script src="http://assets.bolinhodecopo.art.br/scripts/app.js"></script>
 </head>
 <body>
   <div id="fb-root"></div>
@@ -40,25 +37,35 @@
     }(document, 'script', 'facebook-jssdk'));</script>
   <!-- end of facebook script -->
 
-  <header id="app-header">
+  <header class="wrapper app-header">
     <h1 class="logo">
       <a href="/">
-        <img src="https://s3.amazonaws.com/bolinhodecopo-blog/img/logo.png" alt="Bolinho de Copo">
+        <img src="/images/logo.png" alt="Bolinho de Copo">
       </a>
     </h1>
   </header>
 
-  <nav id="app-nav">
-    <ul class="links-list">
-      <li><a href="http://bolinhodecopo.art.br/">Loja</a></li>
-      <li><a href="http://blog.bolinhodecopo.art.br/tagged/sobre/chrono">Bolinho de Copo?</a></li>
-      <li><a class="active" href="http://blog.bolinhodecopo.art.br/">Blog</a></li>
-      <li><a href="http://blog.bolinhodecopo.art.br/tagged/lab">Laboratório de receitas</a></li>
-      <li><a href="mailto:contato@bolinhodecopo.art.br">Fale conosco</a></li>
+  <nav class="wrapper app-nav">
+    <ul class="wrapper links-list">
+      <li>
+        <a href="http://bolinhodecopo.art.br" class="active">Loja</a>
+      </li>
+      <li>
+        <a href="http://blog.bolinhodecopo.art.br/tagged/sobre/chrono">Bolinho de copo?</a>
+      </li>
+      <li>
+        <a href="http://blog.bolinhodecopo.art.br">Blog</a>
+      </li>
+      <li>
+        <a href="http://blog.bolinhodecopo.art.br/tagged/lab">Laboratório de receitas</a>
+      </li>
+      <li>
+        <a href="mailto:contato@bolinhodecopo.art.br">Fale conosco</a>
+      </li>
     </ul>
   </nav>
 
-  <section id="content" class="clearfix">
+  <section class="clearfix wrapper app-content">
   	<ul id="posts-list">
       {block:Posts}
         {block:Text}
@@ -87,46 +94,48 @@
         {/block:Text}
       {/block:Posts}
       {block:Pagination}
-        <li class="pagination clearfix">
+        <li class="posts-pagination clearfix">
           {block:PreviousPage}<a href="{PreviousPage}" class="left">&laquo; Anterior</a>{/block:PreviousPage}
           {block:NextPage}<a href="{NextPage}" class="right">Próxima &raquo;</a>{block:NextPage}
         </li>
       {/block:Pagination}
   	</ul>
-    <h1 class="social-title">Onde nos encontrar?</h1>
-    <ul id="social-list" class="clearfix">
-      <li class="icon instagram">
-        <a href="http://instagram.com/bolinhodecopo" target="_blank">
-          <img src="https://s3.amazonaws.com/bolinhodecopo-blog/img/icones/instagram.png" alt="Instagram">
-        </a>
-      </li>
-      <li class="icon pinterest">
-        <a href="http://pinterest.com/bolinhodecopo/" target="_blank">
-          <img src="https://s3.amazonaws.com/bolinhodecopo-blog/img/icones/pinterest.png" alt="Pinterest">
-        </a>
-      </li>
-      <li class="icon feed">
-        <a href="http://blog.bolinhodecopo.art.br/rss" target="_blank">
-          <img src="https://s3.amazonaws.com/bolinhodecopo-blog/img/icones/feed.png" alt="Feed">
-        </a>
-      </li>
-      <!-- facebook -->
-      <li class="social" style="background: #fff;">
-        <div class="fb-like-box" data-href="https://www.facebook.com/BolinhoDeCopo" data-width="300" data-show-faces="false" data-stream="true" data-show-border="true" data-header="false"></div>
-      </li>
+    <aside class="clearfix sidebar">
+      <h1 class="social-title">Onde nos encontrar?</h1>
+      <ul class="clearfix list">
+        <li class="icon instagram">
+          <a href="http://instagram.com/bolinhodecopo" target="_blank">
+            <img src="http://assets.bolinhodecopo.art.br/images/icones/instagram.png" alt="Instagram">
+          </a>
+        </li>
+        <li class="icon pinterest">
+          <a href="http://pinterest.com/bolinhodecopo/" target="_blank">
+            <img src="http://assets.bolinhodecopo.art.br/images/icones/pinterest.png" alt="Pinterest">
+          </a>
+        </li>
+        <li class="icon feed">
+          <a href="http://blog.bolinhodecopo.art.br/rss" target="_blank">
+            <img src="http://assets.bolinhodecopo.art.br/images/icones/feed.png" alt="Feed">
+          </a>
+        </li>
+        <!-- facebook -->
+        <li class="social" style="background: #fff;">
+          <div class="fb-like-box" data-href="https://www.facebook.com/BolinhoDeCopo" data-width="300" data-show-faces="false" data-stream="true" data-show-border="true" data-header="false"></div>
+        </li>
 
-      <!-- twitter -->
-      <li class="social">
-        <a class="twitter-timeline" href="https://twitter.com/BolinhoDeCopo" data-widget-id="344275165804380160">Tweets by @BolinhoDeCopo</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </li>
+        <!-- twitter -->
+        <li class="social">
+          <a class="twitter-timeline" href="https://twitter.com/BolinhoDeCopo" data-widget-id="344275165804380160">Tweets by @BolinhoDeCopo</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </li>
 
-      <!-- google+ -->
-      <li class="social">
-        <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
-        <div width="300" class="g-plus" data-href="https://plus.google.com/115407635197632595818"></div>
-      </li>
-    </ul>
+        <!-- google+ -->
+        <li class="social">
+          <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+          <div width="300" class="g-plus" data-href="https://plus.google.com/115407635197632595818"></div>
+        </li>
+      </ul>
+    </aside>
   </section>
 
   {block:IfGoogleAnalyticsID}
